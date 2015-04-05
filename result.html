@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head><link rel="icon" href="crystal.jpg" type="image/x-icon/">
+<style type="text/css"></style>
+
+<link href="style1.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+<title>Whtye's Auto</title>
+<link href='http://fonts.googleapis.com/css?family=Buenard' rel='stylesheet' type='text/css'>
+</head>
+<script> 
+jQuery('#linktomouseover').hover(function() 
+{ 
+jQuery('#heads').css("background-image", "url(top1.jpg)"); 
+}).mouseleave(function(){
+jQuery('#heads').css("background-image", "url(extend.jpg)"); 
+});
+
+//main image control
+    function changeBackground(divId, newImage) {
+        document.getElementById(divId).style.backgroundImage = 'url("' + newImage + '")';
+	
+    }
+//end main image control
+
+</script>
+<body>
+<div id="Container" >
+
+    
+<div id="heads" > 
+	<div id="logo"></div>
+    
+	<div id="hea">     
+		Whtye's Auto
+	</div>
+    
+	<div id="menu" >
+    	<ul> 
+    		<li><a href="Home.html">Home</a></li>
+        	<li><a href="store.html">Shop</a> </li>
+    		<li><a href="contact.html">Contact</a></li>
+			<li><a href="about.html">About Us</a></li>
+			<li><a href="product.html">Products</a></li>
+            <li><a href="ques.html">Register</a></li>
+			<li><a href="Gallery.html">Sign In</a></li>
+        </ul>
+    </div>
+	
+    <div id="vertical-menu"> 
+    	<ul>
+
+            <li> <button  onMouseOver="changeBackground('heads', 'img/honda.jpg');">Honda</button></li>
+            <li> <button  onMouseOver="changeBackground('heads', 'img/audi.jpg');">Audi</button></li>
+            <li> <button  onMouseOver="changeBackground('heads', 'img/mist.jpg');">Mitsubishi</button></li>
+           <li> <button  onMouseOver="changeBackground('heads', 'img/toyota.jpg');">Toyota</button></li>
+        </ul>
+    </div>
+</div>
+
+        
+  
+  
+			
+    			<div id="products"> PRODUCTS 
+    
+                        <!-- HTML for SEARCH BAR -->
+	               <div id="tfheader">
+		              <form id="tfnewsearch" method="get" action="http://www.google.com">
+		                  <input type="text" class="tftextinput" name="q" size="21" maxlength="120"><input type="submit" value="search" class="tfbutton" placeholder="Enter a keyword, Phrase or part number">
+                    </form>
+	               <div class="tfclear"></div>
+	</div>
+
+                </div>
+    
+		<div id="metics" > 
+        		
+				<div id="SCC">Name of Part</div>
+                
+		       <div id="partImage"></div>	
+            
+                <div id="prodDetails">"Product Name"<br> Product Details</div>	
+		
+        </div>
+        
+		<div id="gift"><p> <a href="contact.html">Call</a> or <a href="contact.html">Email </a>us to get a 50% off gift voucher</p>
+			<div id="Picture"><img src="gift.jpg" alt="" width="250" height="250">  </div> 
+		</div>
+		
+	<div id="foot">
+			<p>Copyright &copy; Peta-Gaye Mckenzie &nbsp;&nbsp;&nbsp; 		
+	
+     
+   	    <footer>
+   	      <a href="http://facebook.com">
+          <img src="fb.jpg" style="width:30px" alt="Facebook"></a>&nbsp;&nbsp;
+   	      <a href="http://twitter.com"><img src="twitter.jpg" style="width:30px" alt="Twitter"> </a>&nbsp;&nbsp;
+   	      <a href="http://oovoo.com"><img src="oovoo.jpg" style="width:30px" alt="Oovoo"> </a>
+  	    </footer>
+       
+    </div>
+	
+	
+</div>   
+</body>
+</html>
