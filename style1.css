@@ -550,6 +550,28 @@ font-family: Arial, Verdana;
 	.tfclear{
 		clear:both;
 	}
+#partImage
+{
+    width: 200px;
+    height: 200px;
+    border: 1px;
+    border-style: groove;
+    border-color: #000;
+    float:left;
+    
+}
+#prodDetails
+{
+    
+    width: 400px;
+    height: 200px;
+    border: 1px;
+    border-style: groove;
+    border-color: #000;
+    float:right;
+    margin-right: 250px;
+    
+}
 #SCC {
  margin-top:5px;
  font-family: 'Quicksand', sans-serif;
